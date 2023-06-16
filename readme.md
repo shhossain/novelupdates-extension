@@ -2,6 +2,9 @@
 
 A browser extension that adds a recommendation to novelupdates.com
 
+## Demo
+![Demo](image.png)
+
 ## Installation
 
 1. Download the latest zip from [here](https://github.com/shhossain/novelupdates-recommender/archive/refs/heads/main.zip)
