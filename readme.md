@@ -1,6 +1,6 @@
 # AI Recommendations For Novelupdates
 
-A browser extension that adds a recommendation system to novelupdates.com
+A browser extension that adds a recommendation to novelupdates.com
 
 ## Installation
 

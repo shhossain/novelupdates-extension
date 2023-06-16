@@ -2,6 +2,7 @@
   "manifest_version": 3,
   "name": "NovelUpdates AI Recommendations",
   "version": "1.0",
+  "description": "A browser extension that adds a recommendations to novelupdates.com",
   "background": {
     "service_worker": "background.js"
   },
