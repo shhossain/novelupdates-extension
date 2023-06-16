@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        width: 300px;
+        height: 560px;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: var(--bs-dark);
+          color: var(--bs-light);
+        }
+      }
+
+      @media (prefers-color-scheme: light) {
+        body {
+          background-color: var(--bs-light);
+          color: var(--bs-dark);
+        }
+        .text-bg-dark {
+          background-color: var(--bs-dark);
+          color: var(--bs-light);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container text-bg-dark">
+      <h5 class="card-title">NovelUpdates AI Recomendations</h5>
+      <br>
+      <h6 class="card-title">Settings</h6>
+      <span
+        class="input-group-text"
+        id="basic-addon1"
+        data-bs-toggle="tooltip"
+        data-bs-title="Number of recommendations to show"
+        >Top N</span
+      >
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Top N"
+        aria-label="Top N"
+        aria-describedby="basic-addon1"
+        id="topN"
+      />
+
+      <span
+        class="input-group-text"
+        id="basic-addon1"
+        data-bs-toggle="tooltip"
+        data-bs-title="How much Similarity you want to consider"
+        >Similarity</span
+      >
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Similarity"
+        aria-label="Similarity Weight"
+        aria-describedby="basic-addon1"
+        id="w1"
+      />
+
+      <span
+        class="input-group-text"
+        id="basic-addon1"
+        data-bs-toggle="tooltip"
+        data-bs-title="Should rating matter?"
+        >Rating</span
+      >
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Rating"
+        aria-label="Rating Weight"
+        aria-describedby="basic-addon1"
+        id="w2"
+      />
+
+      <span
+        class="input-group-text"
+        id="basic-addon1"
+        data-bs-toggle="tooltip"
+        data-bs-title="Should rank matter?"
+        >Rank
+      </span>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Rank"
+        aria-label="Rank Weight"
+        aria-describedby="basic-addon1"
+        id="w3"
+      />
+      <br />
+
+      <div class="d-grid gap-2 d-md-block">
+        <button class="btn btn-success" type="button" id="save">Save</button>
+        <button class="btn btn-primary" type="button" id="reset">Reset</button>
+        <button class="btn btn-danger" type="button" id="close">Close</button>
+      </div>
+    </div>
+
+    <script src="bootstrap.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
