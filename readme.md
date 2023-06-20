@@ -1,4 +1,4 @@
-# AI Recommendations For Novelupdates
+# A browser extension for novelupdates
 
 A browser extension that adds a recommendation series and description for recommendation Lists.
 
