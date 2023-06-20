@@ -4,6 +4,8 @@ const parts = url.split("/");
 const novelName = parts[parts.length - 2];
 let timer = null;
 
+const apiURL = "https://shhossain.pythonanywhere.com";
+
 // Function to show a loading message
 const show_loading = (element) => {
   const loadingElement = document.createElement("span");
@@ -41,8 +43,7 @@ const hide_loading = (txt = null) => {
 async function fetchRecommendations({ topN, w1, w2, w3 }) {
   // Send a request to the API with the novel name and topN value. catch error if any
   try {
-    const url = `https://shhossain.pythonanywhere.com/api/recommend?url=${novelName}&top_n=${topN}&w1=${w1}&w2=${w2}&w3=${w3}`;
-
+    const url = `${apiURL}/api/recommend?url=${novelName}&top_n=${topN}&w1=${w1}&w2=${w2}&w3=${w3}`;
     const response = await fetch(url);
     const data = await response.json();
     const recommendations = data.recommendations;
@@ -124,11 +125,11 @@ async function addRecommendationsContainer(data) {
       clearInterval(ftimer);
       hide_loading();
     }
-    i++;
     if (i == 10) {
       clearInterval(ftimer);
       hide_loading("Failed to load recommendations");
     }
+    i++;
   }, 1000);
 }
 

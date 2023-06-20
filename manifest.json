@@ -8,7 +8,8 @@
   },
   "host_permissions": [
     "https://www.novelupdates.com/",
-    "https://shhossain.pythonanywhere.com/"
+    "https://shhossain.pythonanywhere.com/",
+    "http://localhost:5000/"
   ],
   "permissions": ["storage", "tabs"],
   "action": {
@@ -27,7 +28,11 @@
   "content_scripts": [
     {
       "matches": ["https://www.novelupdates.com/series/*"],
-      "js": ["content.js"]
+      "js": ["series.js"]
+    },
+    {
+      "matches": ["https://www.novelupdates.com/viewlist/*"],
+      "js": ["viewlist.js"]
     }
   ]
 }
