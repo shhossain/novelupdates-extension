@@ -70,12 +70,12 @@ document.addEventListener("DOMContentLoaded", async () => {
     // Restore the options when the popup is opened
     restoreOptions();
   }
-  // https://www.novelupdates.com/viewlist/72474/
+
   if (url.includes("novelupdates.com/viewlist/")) {
-    document.body.style.width = "200px";
+    document.body.style.width = "100px";
     document.body.style.height = "20px";
     document.body.innerHTML =
-      "<div class='text-center'>You are on a list page. Please open a series page to use this extension.</div>";
+      "<div class='text-center'>You are on a list page.</div>";
   }
 
   const tooltipTriggerList = document.querySelectorAll(
