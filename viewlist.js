@@ -1,5 +1,5 @@
 const url = window.location.href;
-const apiURL = "http://localhost:5000";
+const apiURL = "https://shhossain.pythonanywhere.com";
 
 function getNovelUrls() {
   // all a tags
