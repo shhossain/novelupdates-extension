@@ -1,13 +1,13 @@
-# AI Recommendations For Novelupdates
+# A browser extension for novelupdates
 
-A browser extension that adds a recommendation to novelupdates.com
+A browser extension that adds a recommendation series and description for recommendation Lists.
 
 ## Demo
 ![Demo](image.png)
 
 ## Installation
 
-1. Download the latest zip from [here](https://github.com/shhossain/novelupdates-recommender/archive/refs/heads/main.zip)
+1. Download the latest zip from [here](https://github.com/shhossain/novelupdates-extension/archive/refs/heads/main.zip)
 2. Unzip the file
 3. Go to `chrome://extensions/` in your browser
 4. Turn on developer mode (top right corner)
