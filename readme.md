@@ -6,7 +6,10 @@ A browser extension that adds a recommendation series and description for recomm
 ![Demo](image.png)
 
 ## Installation
+### Web Store
+* [Firefox](https://addons.mozilla.org/en-US/firefox/addon/novelupdates-extension/)
 
+### Download From Source
 1. Download the latest zip from [here](https://github.com/shhossain/novelupdates-extension/archive/refs/heads/main.zip)
 2. Unzip the file
 3. Go to `chrome://extensions/` in your browser
@@ -30,8 +33,8 @@ Click on the extension icon, and you will see a popup with the following options
 - Rank: If you want to consider the rank
 - Save: Save the settings
 
-**NOTE**: You can set rating and rank to `0` if you only want to consider similar novels.
+**NOTE**: You can set the rating and rank to `0` if you only want to consider similar novels.
 
 ## About
 
-This is a small project created mainly to learn about chrome extensions and recommendation systems. The recommendation system is a simple content-based system that uses the novel's description, genres, tags, rating, and rank to find similar novels. The similarity is calculated using cosine similarity. The recommendation system is running on [pythonanywhere](https://www.pythonanywhere.com/), and the extension is using a simple REST API to get the recommendations. Please note that since I'm using the free tier of pythonanywhere, the API might be slow at times.
+This is a small project created mainly to learn about Chrome extensions and recommendation systems. The recommendation system is a simple content-based system that uses the novel's description, genres, tags, rating, and rank to find similar novels. The similarity is calculated using cosine similarity. The recommendation system is running on [pythonanywhere](https://www.pythonanywhere.com/), and the extension is using a simple REST API to get the recommendations. Please note that since I'm using the free tier of Pythonanywhere, the API might be slow at times.
