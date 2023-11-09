@@ -30,18 +30,7 @@
       "js": ["series.js"]
     },
     {
-      "matches": ["https://www.novelupdates.com/viewlist/*",
-        "https://www.novelupdates.com/series-finder/*",
-        "https://www.novelupdates.com/latest-series*",
-        "https://www.novelupdates.com/novelslisting/*",
-        "https://www.novelupdates.com/genre/*",
-        "https://www.novelupdates.com/stag/*",
-        "https://www.novelupdates.com/language/*",
-        "https://www.novelupdates.com/nauthor/*",
-        "https://www.novelupdates.com/series-ranking*",
-        "https://www.novelupdates.com/opublisher/*",
-        "https://www.novelupdates.com/epublisher/*",
-        "https://www.novelupdates.com/novelslisting*"],
+      "matches": ["https://www.novelupdates.com/viewlist/*"],
       "js": ["viewlist.js"]
     }
   ]
